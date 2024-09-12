@@ -13,6 +13,20 @@
 		187FF6662C92E968009CB09A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6652C92E968009CB09A /* Base */; };
 		187FF6682C92E96A009CB09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6672C92E96A009CB09A /* Assets.xcassets */; };
 		187FF66B2C92E96A009CB09A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 187FF66A2C92E96A009CB09A /* Base */; };
+		187FF6812C92F305009CB09A /* AppResources in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6722C92F305009CB09A /* AppResources */; };
+		187FF6822C92F305009CB09A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6732C92F305009CB09A /* Base */; };
+		187FF6832C92F305009CB09A /* Common in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6742C92F305009CB09A /* Common */; };
+		187FF6842C92F305009CB09A /* Coordinator in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6752C92F305009CB09A /* Coordinator */; };
+		187FF6852C92F305009CB09A /* Home in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6762C92F305009CB09A /* Home */; };
+		187FF6862C92F305009CB09A /* Library in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6772C92F305009CB09A /* Library */; };
+		187FF6872C92F305009CB09A /* Login in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6782C92F305009CB09A /* Login */; };
+		187FF6882C92F305009CB09A /* Network in Resources */ = {isa = PBXBuildFile; fileRef = 187FF6792C92F305009CB09A /* Network */; };
+		187FF6892C92F305009CB09A /* Onboarding in Resources */ = {isa = PBXBuildFile; fileRef = 187FF67A2C92F305009CB09A /* Onboarding */; };
+		187FF68A2C92F305009CB09A /* Player in Resources */ = {isa = PBXBuildFile; fileRef = 187FF67B2C92F305009CB09A /* Player */; };
+		187FF68B2C92F305009CB09A /* Profile in Resources */ = {isa = PBXBuildFile; fileRef = 187FF67C2C92F305009CB09A /* Profile */; };
+		187FF68C2C92F305009CB09A /* Search in Resources */ = {isa = PBXBuildFile; fileRef = 187FF67D2C92F305009CB09A /* Search */; };
+		187FF68D2C92F305009CB09A /* Settings in Resources */ = {isa = PBXBuildFile; fileRef = 187FF67E2C92F305009CB09A /* Settings */; };
+		187FF68E2C92F305009CB09A /* Splash in Resources */ = {isa = PBXBuildFile; fileRef = 187FF67F2C92F305009CB09A /* Splash */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +38,20 @@
 		187FF6672C92E96A009CB09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187FF66A2C92E96A009CB09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187FF66C2C92E96A009CB09A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187FF6722C92F305009CB09A /* AppResources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppResources; sourceTree = "<group>"; };
+		187FF6732C92F305009CB09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Base; sourceTree = "<group>"; };
+		187FF6742C92F305009CB09A /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
+		187FF6752C92F305009CB09A /* Coordinator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Coordinator; sourceTree = "<group>"; };
+		187FF6762C92F305009CB09A /* Home */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Home; sourceTree = "<group>"; };
+		187FF6772C92F305009CB09A /* Library */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Library; sourceTree = "<group>"; };
+		187FF6782C92F305009CB09A /* Login */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Login; sourceTree = "<group>"; };
+		187FF6792C92F305009CB09A /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = "<group>"; };
+		187FF67A2C92F305009CB09A /* Onboarding */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Onboarding; sourceTree = "<group>"; };
+		187FF67B2C92F305009CB09A /* Player */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Player; sourceTree = "<group>"; };
+		187FF67C2C92F305009CB09A /* Profile */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Profile; sourceTree = "<group>"; };
+		187FF67D2C92F305009CB09A /* Search */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Search; sourceTree = "<group>"; };
+		187FF67E2C92F305009CB09A /* Settings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Settings; sourceTree = "<group>"; };
+		187FF67F2C92F305009CB09A /* Splash */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Splash; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +68,7 @@
 		187FF6522C92E968009CB09A = {
 			isa = PBXGroup;
 			children = (
+				187FF6802C92F305009CB09A /* Modules */,
 				187FF65D2C92E968009CB09A /* SpotifyClone */,
 				187FF65C2C92E968009CB09A /* Products */,
 			);
@@ -65,6 +94,27 @@
 				187FF66C2C92E96A009CB09A /* Info.plist */,
 			);
 			path = SpotifyClone;
+			sourceTree = "<group>";
+		};
+		187FF6802C92F305009CB09A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				187FF6722C92F305009CB09A /* AppResources */,
+				187FF6732C92F305009CB09A /* Base */,
+				187FF6742C92F305009CB09A /* Common */,
+				187FF6752C92F305009CB09A /* Coordinator */,
+				187FF6762C92F305009CB09A /* Home */,
+				187FF6772C92F305009CB09A /* Library */,
+				187FF6782C92F305009CB09A /* Login */,
+				187FF6792C92F305009CB09A /* Network */,
+				187FF67A2C92F305009CB09A /* Onboarding */,
+				187FF67B2C92F305009CB09A /* Player */,
+				187FF67C2C92F305009CB09A /* Profile */,
+				187FF67D2C92F305009CB09A /* Search */,
+				187FF67E2C92F305009CB09A /* Settings */,
+				187FF67F2C92F305009CB09A /* Splash */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +175,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187FF68B2C92F305009CB09A /* Profile in Resources */,
+				187FF68A2C92F305009CB09A /* Player in Resources */,
+				187FF6812C92F305009CB09A /* AppResources in Resources */,
+				187FF6842C92F305009CB09A /* Coordinator in Resources */,
 				187FF6682C92E96A009CB09A /* Assets.xcassets in Resources */,
+				187FF68C2C92F305009CB09A /* Search in Resources */,
 				187FF66B2C92E96A009CB09A /* Base in Resources */,
 				187FF6662C92E968009CB09A /* Base in Resources */,
+				187FF6892C92F305009CB09A /* Onboarding in Resources */,
+				187FF68D2C92F305009CB09A /* Settings in Resources */,
+				187FF6852C92F305009CB09A /* Home in Resources */,
+				187FF68E2C92F305009CB09A /* Splash in Resources */,
+				187FF6862C92F305009CB09A /* Library in Resources */,
+				187FF6882C92F305009CB09A /* Network in Resources */,
+				187FF6822C92F305009CB09A /* Base in Resources */,
+				187FF6872C92F305009CB09A /* Login in Resources */,
+				187FF6832C92F305009CB09A /* Common in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
