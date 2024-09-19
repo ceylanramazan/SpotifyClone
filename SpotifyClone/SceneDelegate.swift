@@ -6,17 +6,38 @@
 //
 
 import UIKit
+import Coordinator
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
+  var appCoordinator: AppCoordinator?
 
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-    guard let _ = (scene as? UIWindowScene) else { return }
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+
+    // Create UIWindow with the windowScene
+    let window = UIWindow(windowScene: windowScene)
+
+    // Create UINavigationController as the root navigation controller
+    let navigationController = UINavigationController()
+
+    // Initialize the Router with the navigation controller
+    let router = DefaultRouter(navigationController: navigationController)
+
+    // Initialize the AppCoordinator with the router
+    appCoordinator = AppCoordinator(router: router)
+
+    // Start the app coordinator (first screen should be Splash)
+    appCoordinator?.start()
+
+    // Set the root view controller of the window as the navigation controller
+    window.rootViewController = navigationController
+
+    // Assign and display the window
+    self.window = window
+    window.makeKeyAndVisible()
   }
 
   func sceneDidDisconnect(_ scene: UIScene) {
