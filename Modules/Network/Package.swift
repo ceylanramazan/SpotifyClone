@@ -4,20 +4,27 @@
 import PackageDescription
 
 let package = Package(
-    name: "Network",
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "Network",
-            targets: ["Network"]),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "Network"),
-        .testTarget(
-            name: "NetworkTests",
-            dependencies: ["Network"]),
-    ]
+  name: "Network",
+  products: [
+    .library(
+      name: "Network",
+      targets: ["Network"]),
+  ],
+  dependencies: [
+    .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.4.0"),
+    .package(path: "../Common")
+  ],
+  targets: [
+    .target(
+      name: "Network",
+      dependencies: [
+        "Alamofire",
+        "Common"
+      ]
+    ),
+    .testTarget(
+      name: "NetworkTests",
+      dependencies: ["Network"]
+    ),
+  ]
 )
