@@ -4,20 +4,31 @@
 import PackageDescription
 
 let package = Package(
-    name: "Coordinator",
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "Coordinator",
-            targets: ["Coordinator"]),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "Coordinator"),
-        .testTarget(
-            name: "CoordinatorTests",
-            dependencies: ["Coordinator"]),
-    ]
+  name: "Coordinator",
+  products: [
+    // Products define the executables and libraries a package produces, making them visible to other packages.
+    .library(
+      name: "Coordinator",
+      targets: ["Coordinator"]),
+  ],
+  dependencies: [
+    .package(path: "../Splash"),
+    .package(path: "../Login"),
+    .package(path: "../Home"),
+  ],
+  targets: [
+    // Targets are the basic building blocks of a package, defining a module or a test suite.
+    // Targets can depend on other targets in this package and products from dependencies.
+    .target(
+      name: "Coordinator",
+      dependencies: [
+        "Splash",
+        "Login",
+        "Home"
+      ]
+    ),
+    .testTarget(
+      name: "CoordinatorTests",
+      dependencies: ["Coordinator"]),
+  ]
 )
